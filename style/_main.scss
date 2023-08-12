@@ -5,6 +5,12 @@
     height: 6rem;
     background-color: #fff;
 
+    @include responsive (tablet) {
+        &__content {
+            display: none;
+        }
+    }
+
     &__content {
         list-style: none;
 
@@ -29,6 +35,32 @@
 
 .hero {
     background-image: linear-gradient(#fff, #fff7ed);
+
+    @include responsive(tablet) {
+        &__right {
+            width: 100%;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        &__left {
+            margin-bottom: 2rem;
+            width: 100%;
+            text-align: center;
+
+            &-button {
+                display: flex;
+                justify-content: center;
+            }
+
+            &-last {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 
     &__left {
         &-title {
@@ -70,6 +102,16 @@
 .service {
     padding: 4rem 0;
 
+    @include responsive(tablet) {
+        &__content {
+            padding: 0 3rem;
+
+            &-block {
+                width: 100%;
+            }
+        }
+    }
+
     &__title {
         font-size: 3rem;
         font-weight: 600;
@@ -103,6 +145,16 @@
 }
 
 .solution {
+    @include responsive(tablet) {
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+        }
+    }
+
     &__left {
         padding: 2rem;
     }
@@ -121,6 +173,20 @@
 }
 
 .feature {
+    @include responsive(tablet) {
+        &__left {
+            width: 100%;
+
+            &-block {
+                width: 100%;
+            }
+        }
+
+        &__right {
+            width: 100%;
+        }
+    }
+
     &__left {
         &-title {
             font-size: 2rem;
@@ -142,6 +208,12 @@
 
 .icon {
     padding: 2rem 0;
+
+    @include responsive(tablet) {
+        &__block {
+            width: 100%;
+        }
+    }
 
     &__block {
         padding: 2rem;
@@ -210,7 +282,20 @@
 
 .download {
     padding: 3rem 0;
-
+    @include responsive (tablet){
+        &__left{
+            width: 100%;
+            text-align: center;
+            &-button{
+                img{
+                    margin-right: 0;
+                }
+            }
+        }
+        &__right{
+            width: 100%;
+        }
+    }
     &__left {
         padding: 2rem 2rem 2rem 0;
 
