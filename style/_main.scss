@@ -1,0 +1,253 @@
+@use './base';
+@use './responsive';
+
+.header {
+    height: 6rem;
+    background-color: #fff;
+
+    &__content {
+        list-style: none;
+
+        li {
+            cursor: pointer;
+            padding: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            margin-right: 5px;
+
+            &:hover {
+                border-bottom-color: $primary_color;
+            }
+        }
+    }
+
+    &__button {
+        background-color: $primary_color;
+        color: #fff;
+    }
+}
+
+.hero {
+    background-image: linear-gradient(#fff, #fff7ed);
+
+    &__left {
+        &-title {
+            font-size: 3rem;
+        }
+
+        &-paragraph {
+            color: $paragraph_color;
+            line-height: 1.5rem;
+            padding: 1rem 0;
+        }
+
+        &-button {
+            img {
+                height: 4rem;
+                margin-right: 1rem;
+            }
+        }
+
+        &-last {
+            padding: 1rem 0;
+
+            img {
+                height: 3rem;
+                margin-right: 1rem;
+            }
+
+            p {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__right {
+        padding: 3rem;
+    }
+}
+
+.service {
+    padding: 4rem 0;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    &__content {
+        padding: 2rem 0;
+
+        &-block {
+            padding: 2rem;
+            border-radius: 12px;
+
+            img {
+                height: 12rem;
+                width: 12rem;
+            }
+
+            h2 {
+                padding: 1rem 0;
+            }
+
+            p {
+                color: $paragraph_color;
+            }
+
+            &:hover {
+                box-shadow: 1px 1px 20px rgb(192, 190, 190);
+            }
+        }
+    }
+}
+
+.solution {
+    &__left {
+        padding: 2rem;
+    }
+
+    &__right {
+        &-title {
+            font-size: 3rem;
+        }
+
+        &-paragraph {
+            color: $paragraph_color;
+            padding: 1rem 0;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.feature {
+    &__left {
+        &-title {
+            font-size: 2rem;
+        }
+
+        &-block {
+            padding: 1rem 0;
+        }
+    }
+
+    &__right {
+        padding: 2rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.icon {
+    padding: 2rem 0;
+
+    &__block {
+        padding: 2rem;
+        box-shadow: 2px 2px 8px rgb(183, 180, 180);
+
+        &-image {
+            border-radius: 12px;
+            background-color: #20da49;
+            padding: .5rem;
+
+            svg {
+                color: #fff;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+}
+
+.testimonial {
+    padding: 4rem 0;
+    background-color: #FFF7ED;
+
+    &__title {
+        font-size: 3rem;
+        padding: 2rem 0;
+    }
+
+    &__content {
+        &-block {
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 3px 3px 10px rgb(183, 180, 180);
+
+            p {
+                padding: 1rem 0;
+                color: $paragraph_color;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    &__last {
+        img {
+            border: 1px solid gray;
+            width: 3.5rem;
+            border-radius: 50%;
+        }
+
+        &-item {
+            margin-left: 1rem;
+
+            h2 {
+                text-transform: capitalize;
+            }
+
+            .group-start {
+                svg {
+                    color: rgb(219, 219, 42);
+                }
+            }
+        }
+    }
+}
+
+.download {
+    padding: 3rem 0;
+
+    &__left {
+        padding: 2rem 2rem 2rem 0;
+
+        &-title {
+            font-size: 2rem;
+        }
+
+        &-paragraph {
+            color: $paragraph_color;
+            padding: 1.5rem 0;
+        }
+
+        &-button {
+            height: 4rem;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__right {
+        padding: 2rem;
+    }
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    font-weight: 600;
+
+    &__icon {
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-left: 1rem;
+        }
+    }
+}

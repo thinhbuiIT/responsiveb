@@ -1,0 +1,31 @@
+@mixin responsive($break-point) {
+    @if ($break-point ==tablet) {
+        @media screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if ($break-point ==mobile) {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    // @else if ($break-point ==tablet_big) {
+    //     @media screen and (min-width: 768px)and (max-width: 991px) {
+    //         @content;
+    //     }
+    // }
+
+    // @else if ($break-point ==desktop) {
+    //     @media screen and (min-width: 992px)and (max-width: 1199px) {
+    //         @content;
+    //     }
+    // }
+
+    // @else if ($break-point ==desktop_big) {
+    //     @media screen and (min-width: 1200px) {
+    //         @content;
+    //     }
+    // }
+}
